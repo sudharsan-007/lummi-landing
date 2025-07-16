@@ -1,0 +1,26 @@
+[
+  {
+    "session_id": "4ac22079-4796-4a07-9bd3-9e99d13f6bc1",
+    "transcript_path": "/Users/sudu/.claude/projects/-Users-sudu-files-Github-Projects-lummi-landing-page/4ac22079-4796-4a07-9bd3-9e99d13f6bc1.jsonl",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "4ac22079-4796-4a07-9bd3-9e99d13f6bc1",
+    "transcript_path": "/Users/sudu/.claude/projects/-Users-sudu-files-Github-Projects-lummi-landing-page/4ac22079-4796-4a07-9bd3-9e99d13f6bc1.jsonl",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "1f84490a-bf8e-4ea4-9d0e-4b41c2503df4",
+    "transcript_path": "/Users/sudu/.claude/projects/-Users-sudu-files-Github-Projects-lummi-landing-page/1f84490a-bf8e-4ea4-9d0e-4b41c2503df4.jsonl",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  },
+  {
+    "session_id": "b6763cb9-7164-4ef4-80b5-3f21d5856e04",
+    "transcript_path": "/Users/sudu/.claude/projects/-Users-sudu-files-Github-Projects-lummi-landing-page/b6763cb9-7164-4ef4-80b5-3f21d5856e04.jsonl",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]
