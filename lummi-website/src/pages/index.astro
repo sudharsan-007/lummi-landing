@@ -8,6 +8,7 @@ import WhyLuumiSection from '../components/ui/why-luumi-section';
 import TestimonialSlider from '../components/ui/testimonial-slider';
 import { Cta4 } from '../components/ui/cta-4';
 import { LuumiFooter } from '../components/ui/footer';
+import { SimpleNav } from '../components/ui/simple-nav';
 ---
 
 <html lang="en">
@@ -77,23 +78,36 @@ import { LuumiFooter } from '../components/ui/footer';
 		</script>
 	</head>
 	<body class="bg-white text-gray-900 font-sans antialiased">
+		<!-- Floating Navigation -->
+		<SimpleNav client:load />
+
 		<!-- Lightning Hero Section -->
-		<HeroSection client:load />
+		<section id="hero">
+			<HeroSection client:load />
+		</section>
 
 		<!-- Modern Services Section -->
-		<ServicesSection client:load />
+		<section id="services">
+			<ServicesSection client:load />
+		</section>
 
 		<!-- Enhanced How We Work Section -->
-		<HowWeWorkEnhanced client:load />
+		<section id="process">
+			<HowWeWorkEnhanced client:load />
+		</section>
 
 		<!-- Why Luumi Media - Consolidated Section -->
-		<WhyLuumiSection client:load />
+		<section id="about">
+			<WhyLuumiSection client:load />
+		</section>
 
 		<!-- Testimonials Section -->
 		<TestimonialSlider client:load />
 
 		<!-- Modern CTA Section -->
-		<Cta4 client:load />
+		<section id="contact">
+			<Cta4 client:load />
+		</section>
 
 		<!-- Footer -->
 		<LuumiFooter client:load />
