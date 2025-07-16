@@ -369,7 +369,7 @@ export const HeroSection: React.FC = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="w-full z-200 top-[30%] relative"
+          className="w-full z-200 top-[35%] relative"
         >
           <motion.div variants={itemVariants}>
             <FeatureItem name="Message Strategy" value="clarity first" position="left-0 sm:left-10 top-40" />
@@ -397,29 +397,24 @@ export const HeroSection: React.FC = () => {
             onChange={setLightningHue}
             label="Adjust Lightning Energy"
           />
-          {/* Button: "Join us for growth" */}
-          <motion.button
+          {/* Invisible spacer div to maintain spacing */}
+          <motion.div
             variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="flex items-center space-x-2 px-4 py-2 bg-yellow-500/10 hover:bg-yellow-500/20 backdrop-blur-sm rounded-full text-sm mb-6 transition-all duration-300 group"
+            className="mb-6"
           >
-            <span>Transform Your Marketing Today</span>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="transform group-hover:translate-x-1 transition-transform duration-300">
-              <path d="M8 3L13 8L8 13M13 8H3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </motion.button>
+            {/* Empty invisible div to maintain exact spacing */}
+          </motion.div>
 
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl font-light mb-2"
+            className="text-6xl md:text-8xl font-light mb-4"
           >
             Luumi Media
           </motion.h1>
 
           <motion.h2
             variants={itemVariants}
-            className="text-3xl md:text-5xl pb-3 font-light bg-gradient-to-r from-yellow-100 via-yellow-200 to-orange-300 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl pb-4 font-light bg-gradient-to-r from-yellow-100 via-yellow-200 to-orange-300 bg-clip-text text-transparent"
           >
             Growth Systems That Scale
           </motion.h2>
@@ -427,7 +422,7 @@ export const HeroSection: React.FC = () => {
           {/* Description */}
           <motion.p
             variants={itemVariants}
-            className="text-gray-400 mb-9 max-w-2xl"
+            className="text-xl text-gray-400 mb-9 max-w-2xl leading-relaxed"
           >
             We turn scattered marketing into systematic growth. Message-led strategies, paid media mastery, and funnel optimization that actually converts.
           </motion.p>
