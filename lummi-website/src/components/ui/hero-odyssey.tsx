@@ -463,7 +463,15 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* Planet/sphere with brand colors */}
-        <div className="z-10 absolute top-[55%] left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] backdrop-blur-3xl rounded-full bg-[radial-gradient(circle_at_25%_90%,_#1e40af_15%,_#000000de_70%,_#000000ed_100%)]"></div>
+        <div className="z-10 absolute top-[55%] left-1/2 transform -translate-x-1/2 w-[600px] h-[600px] backdrop-blur-3xl rounded-full bg-[radial-gradient(circle_at_25%_90%,_#1e40af_15%,_#000000de_70%,_#000000ed_100%)]">
+          {/* Text overlay on the blue circle */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-white text-6xl md:text-8xl font-light">Your</div>
+              <div className="text-yellow-500 text-6xl md:text-8xl font-bold">Brand</div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );
