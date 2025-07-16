@@ -325,7 +325,6 @@ const FeatureItem: React.FC<FeatureItemProps> = ({ name, value, position }) => {
 };
 
 export const HeroSection: React.FC = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // State for the lightning hue - default to Luumi Media brand yellow
   const [lightningHue, setLightningHue] = useState(45); // Yellow hue
 
@@ -355,70 +354,16 @@ export const HeroSection: React.FC = () => {
     <div className="relative w-full bg-black text-white overflow-hidden">
       {/* Main container with space for content */}
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 h-screen">
-        {/* Navigation */}
+        {/* Navigation - Empty placeholder to maintain spacing */}
         <motion.div
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
           className="px-4 backdrop-blur-3xl bg-black/50 rounded-50 py-4 flex justify-between items-center mb-12"
         >
-          <div className="flex items-center">
-            <div className="text-2xl font-bold text-yellow-500">
-              Luumi Media
-            </div>
-            <div className="hidden md:flex items-center space-x-6 ml-8">
-              <button className="px-4 py-2 bg-yellow-500/20 hover:bg-yellow-500/30 rounded-full text-sm transition-colors">Services</button>
-              <button className="px-4 py-2 text-sm hover:text-yellow-300 transition-colors">How We Work</button>
-              <button className="px-4 py-2 text-sm hover:text-yellow-300 transition-colors">About</button>
-              <button className="px-4 py-2 text-sm hover:text-yellow-300 transition-colors">Contact</button>
-            </div>
-          </div>
-          <div className="flex items-center space-x-4">
-            <button className="hidden md:block px-4 py-2 text-sm hover:text-yellow-300 transition-colors">Get Started</button>
-            <button className="px-4 py-2 bg-yellow-500/20 backdrop-blur-sm rounded-full text-sm hover:bg-yellow-500/30 transition-colors">Book Strategy Call</button>
-            {/* Mobile menu button */}
-            <button
-              className="md:hidden p-2 rounded-md focus:outline-none"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            >
-              {mobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
-            </button>
-          </div>
+          {/* Empty - content removed but div kept as placeholder */}
         </motion.div>
 
-        {/* Mobile menu */}
-        {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="md:hidden fixed inset-0 z-50 bg-black/95 backdrop-blur-lg">
-            <div className="flex flex-col items-center justify-center h-full space-y-6 text-lg">
-              <button
-                className="absolute top-6 right-6 p-2"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-              <button className="px-6 py-3 bg-yellow-500/20 rounded-full">Services</button>
-              <button className="px-6 py-3">How We Work</button>
-              <button className="px-6 py-3">About</button>
-              <button className="px-6 py-3">Contact</button>
-              <button className="px-6 py-3">Get Started</button>
-              <button className="px-6 py-3 bg-yellow-500/20 backdrop-blur-sm rounded-full">Book Strategy Call</button>
-            </div>
-          </motion.div>
-        )}
 
         <motion.div
           variants={containerVariants}
